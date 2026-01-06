@@ -1,38 +1,21 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import BlogSlider from '../components/BlogSlider';
 import Story from '../components/Story';
 import Footer from '../components/Footer';
-import SectionWrapper from '../components/SectionWrapper'; // ✅ added
-import { getAllPosts } from '../lib/blog';
 
-export async function getStaticProps() {
-  const posts = getAllPosts();
-  return { props: { posts } };
-}
-
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <Head>
-        <title>PRISM | Surgical AI Assistant</title>
+        <title>PRISM | Surgical AI Assistant for Pancreatic Surgery</title>
+        <meta name="description" content="PRISM combines AI-powered CT segmentation with mixed reality guidance to revolutionize pancreatic surgery and improve patient outcomes." />
       </Head>
+      
       <Navbar />
-
-      <SectionWrapper>
-        <Hero />
-      </SectionWrapper>
-
-      <SectionWrapper>
-        <BlogSlider posts={posts} />
-      </SectionWrapper>
-
-      <SectionWrapper>
-        <Story />
-      </SectionWrapper>
-
-      <Footer /> {/* keep footer outside wrapper */}
+      <Hero />
+      <Story />
+      <Footer />
     </>
   );
 }

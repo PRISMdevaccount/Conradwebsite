@@ -1,54 +1,127 @@
+import { motion } from "framer-motion";
+import Image from "next/image";
+
 export default function Story() {
   const features = [
-    { title: "AI CT Segmentation", desc: "Automatic detection & mapping of critical organs.", icon: "🧠" },
-    { title: "Mixed Reality Guidance", desc: "3D overlays during surgery for real-time support.", icon: "🩺" },
-    { title: "Risk Reduction", desc: "Lower surgical complications by up to 30%.", icon: "✨" },
-    { title: "Accessible Innovation", desc: "Designed for scalability and low-cost adoption.", icon: "🌍" },
+    { 
+      title: "AI CT Segmentation", 
+      desc: "Automated detection and mapping of critical anatomical structures with clinical-grade accuracy.", 
+      icon: "🧠" 
+    },
+    { 
+      title: "Mixed Reality Guidance", 
+      desc: "Real-time 3D anatomical overlays providing surgeons with enhanced spatial awareness.", 
+      icon: "🔬" 
+    },
+    { 
+      title: "Risk Reduction", 
+      desc: "Clinical studies show potential to reduce surgical complications by 10-30%.", 
+      icon: "📊" 
+    },
+    { 
+      title: "Accessible Innovation", 
+      desc: "Designed for scalability and adoption across diverse healthcare settings.", 
+      icon: "🌍" 
+    },
   ];
 
   return (
-    <section className="relative bg-gradient-to-r from-purple-50 via-purple-100 to-white py-24 px-6 overflow-hidden">
-      {/* Decorative floating gradient prisms */}
-      <div className="absolute -top-24 -left-24 w-64 h-64 bg-gradient-to-r from-purple-300 to-purple-400 rotate-45 opacity-20 blur-3xl animate-pulse"></div>
-      <div className="absolute -bottom-32 -right-24 w-64 h-64 bg-gradient-to-r from-purple-400 to-purple-200 -rotate-12 opacity-20 blur-3xl animate-pulse"></div>
+    <section className="py-20 px-6 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Intended Impact
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Pancreatic surgery presents unique challenges with high complication rates and complex anatomy. 
+            PRISM addresses these challenges by providing surgeons and radiologists with advanced tools for 
+            both pre-operative planning and intra-operative guidance.
+          </p>
+        </motion.div>
 
-      <div className="relative max-w-5xl mx-auto text-center">
-        {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-purple-800 mb-6">
-          Why We Built{" "}
-          <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
-            PRISM
-          </span>
-        </h2>
-
-        {/* Gradient divider */}
-        <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-300 mx-auto rounded-full mb-10"></div>
-
-        {/* Description */}
-        <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-16">
-          Pancreatic cancer is one of the most difficult cancers to treat surgically.
-          With <span className="font-semibold text-purple-700">PRISM</span>, we aim to empower surgeons 
-          and radiologists with real-time assistance during both the pre-operative 
-          and intra-operative phases of surgery. From automatic CT scan segmentation 
-          to AI-assisted organ detection in mixed reality, PRISM is designed to reduce 
-          surgical complications by up to 
-          <span className="font-semibold text-purple-600"> 30%</span> and bring modern, accessible 
-          innovation to the operating room — all at a low cost.
-        </p>
+        {/* Main Feature with Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="bg-white rounded-3xl overflow-hidden shadow-lg mb-16"
+        >
+          <div className="grid md:grid-cols-2 gap-0">
+            <div className="p-12 flex flex-col justify-center">
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                Why PRISM Matters
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Pancreatic cancer remains one of the most challenging malignancies to treat surgically, with 
+                5-year survival rates below 10%. The complexity of pancreatic anatomy and the proximity of 
+                critical blood vessels make these procedures exceptionally demanding.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                PRISM revolutionizes this landscape by combining AI-powered CT segmentation with mixed reality 
+                visualization, enabling surgeons to navigate complex anatomy with unprecedented precision.
+              </p>
+            </div>
+            <div className="relative h-96 md:h-auto bg-gradient-to-br from-purple-50 to-indigo-50">
+              <Image
+                src="/PRISM_website.png"
+                alt="PRISM Platform Interface"
+                fill
+                className="object-contain p-8"
+              />
+            </div>
+          </div>
+        </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          {features.map((f, idx) => (
-            <div
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, idx) => (
+            <motion.div
               key={idx}
-              className="p-6 bg-white/70 rounded-2xl shadow-md backdrop-blur-md hover:scale-105 transition-transform duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all group"
             >
-              <div className="text-4xl mb-4">{f.icon}</div>
-              <h3 className="text-xl font-semibold text-purple-700 mb-2">{f.title}</h3>
-              <p className="text-gray-600">{f.desc}</p>
-            </div>
+              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                {feature.desc}
+              </p>
+            </motion.div>
           ))}
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-center mt-16"
+        >
+          <p className="text-lg text-gray-600 mb-6">
+            Want to learn more about how PRISM can transform surgical outcomes?
+          </p>
+          <a
+            href="/about"
+            className="inline-block px-8 py-4 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transition-colors"
+          >
+            Explore Our Technology
+          </a>
+        </motion.div>
       </div>
     </section>
   );
