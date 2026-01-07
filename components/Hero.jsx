@@ -15,11 +15,6 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <div className="inline-block">
-              <span className="text-xs font-bold tracking-wider text-purple-600 uppercase bg-purple-50 px-4 py-2 rounded-full">
-                Conrad Challenge 2025
-              </span>
-            </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
               PRISM

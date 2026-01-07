@@ -19,7 +19,7 @@ export default function Contact() {
     {
       icon: <MessageSquare className="w-8 h-8" />,
       title: "General Questions",
-      description: "Have questions about PRISM's technology, our team, or the Conrad Challenge? We're happy to help."
+      description: "Have questions about PRISM's technology? We're happy to help."
     }
   ];
 
