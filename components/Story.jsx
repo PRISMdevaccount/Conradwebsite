@@ -71,7 +71,7 @@ export default function Story() {
             </div>
             <div className="relative h-96 md:h-auto bg-gradient-to-br from-purple-50 to-indigo-50">
               <Image
-                src="public/PRISM_website.png"
+                src="/PRISM_website.png"
                 alt="PRISM Platform Interface"
                 fill
                 className="object-contain p-8"
