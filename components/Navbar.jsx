@@ -40,7 +40,7 @@ export default function Navbar() {
               href="/prism" 
               className="text-gray-600 hover:text-purple-600 font-medium transition-colors text-sm"
             >
-              Inside PRISM
+              Our Journey
             </Link>
             <Link 
               href="/contact" 

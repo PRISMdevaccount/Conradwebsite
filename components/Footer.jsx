@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/prism" className="text-gray-600 hover:text-purple-600 transition-colors text-sm">
-                  Inside PRISM
+                  Our Journey
                 </a>
               </li>
               <li>
