@@ -6,25 +6,23 @@ import Image from "next/image";
 import { Linkedin, Mail } from "lucide-react";
 
 export default function Team() {
-  // TODO: Replace with your actual team information
   const teamMembers = [
     {
-      name: "Your Name",
-      role: "Role/Title",
-      bio: "Brief biography highlighting relevant experience, education, or passion for the project. Keep it 2-3 sentences.",
-      image: "/public/Diya.png", // Add your actual images to public/team/
+      name: "Diya Ramakrishnan",
+      role: "CEO & Co-Founder",
+      bio: "Diya manages PRISM's finances, scalability, and business strategy. She leads the development of PRISM's software and user interface, ensuring the platform is both clinically effective and economically viable.",
+      image: "/Diya.png",
       linkedin: "https://www.linkedin.com/in/diya-ramakrishnan/",
       email: "diyaramakrishnan009@gmail.com"
     },
     {
-      name: "Team Member 2",
-      role: "Role/Title",
-      bio: "Brief biography highlighting relevant experience, education, or passion for the project. Keep it 2-3 sentences.",
-      image: "/team/member2.jpg",
+      name: "Ahyoung Song",
+      role: "COO & Co-Founder",
+      bio: "Ahyoung leads medical research integration to ensure clinical accuracy and anatomical precision. She works closely with surgeons to validate PRISM's real-world usability and surgical relevance.",
+      image: "/Ahyoung.png",
       linkedin: "https://www.linkedin.com/in/ahyoung-song/",
       email: "ahyoungsong08@gmail.com"
-    },
-    // Add more team members as needed
+    }
   ];
 
   return (
@@ -49,16 +47,17 @@ export default function Team() {
               Meet the Team
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              A dedicated group of innovators passionate about advancing surgical technology 
-              and improving patient outcomes through cutting-edge mixed reality solutions.
+              We met at the International Science and Engineering Fair (ISEF) in Columbus, Ohio, where we 
+              connected over a shared passion for biomedical innovation. Since then, we've been building 
+              PRISM to make every pancreatic procedure safer.
             </p>
           </motion.div>
         </section>
 
         {/* Team Grid */}
         <section className="py-20 px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               {teamMembers.map((member, idx) => (
                 <motion.div
                   key={idx}
@@ -69,19 +68,13 @@ export default function Team() {
                   className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
                 >
                   {/* Image */}
-                  <div className="relative h-80 bg-gradient-to-br from-purple-50 to-indigo-50">
-                    {/* Placeholder - replace with actual images */}
-                    <div className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-purple-300">
-                      {member.name.charAt(0)}
-                    </div>
-                    {/* When you add images, use:
+                  <div className="relative h-96 bg-gradient-to-br from-purple-50 to-indigo-50">
                     <Image 
                       src={member.image} 
                       alt={member.name}
                       fill
                       className="object-cover"
                     />
-                    */}
                   </div>
 
                   {/* Content */}

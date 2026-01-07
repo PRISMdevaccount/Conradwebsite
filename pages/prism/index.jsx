@@ -8,7 +8,7 @@ export default function Timeline() {
   const timelineEvents = [
     {
       phase: "The Beginning",
-      date: "May 2024",
+      date: "May 2025",
       icon: "Users",
       title: "Meeting at ISEF",
       description: "Diya and Ahyoung met at the International Science and Engineering Fair in Columbus, Ohio. A conversation about pancreatic surgery sparked the idea for PRISM.",
@@ -21,10 +21,10 @@ export default function Timeline() {
     },
     {
       phase: "Research & Development",
-      date: "June - August 2024",
+      date: "June - August 2025",
       icon: "Lightbulb",
       title: "Building PRISM",
-      description: "Intensive development of both the pre-operative software and mixed-reality application. Training AI models and refining the technology.",
+      description: "Development of both the pre-operative software and mixed-reality application. Training AI models and refining the technology.",
       color: "indigo",
       achievements: [
         "Trained 3 U-Net models for CT segmentation",
@@ -35,10 +35,10 @@ export default function Timeline() {
     },
     {
       phase: "Validation",
-      date: "September - November 2024",
+      date: "September - November 2025",
       icon: "TestTube",
       title: "Technical Testing",
-      description: "Rigorous validation on thousands of CT scans and surgical images to ensure clinical-grade accuracy.",
+      description: "Validation on thousands of CT scans and surgical images to ensure clinical-grade accuracy.",
       color: "purple",
       achievements: [
         "Tested on 10,000+ CT scans from Medical Decathlon Dataset",
@@ -49,7 +49,7 @@ export default function Timeline() {
     },
     {
       phase: "Clinical Feedback",
-      date: "October - December 2024",
+      date: "October - December 2025",
       icon: "Hospital",
       title: "Surgeon Evaluations",
       description: "Presented PRISM to 50+ pancreatic surgeons and oncologists across leading medical institutions.",
@@ -63,10 +63,10 @@ export default function Timeline() {
     },
     {
       phase: "Where We Are Now",
-      date: "January 2025",
+      date: "January 2026",
       icon: "Award",
-      title: "Conrad Challenge Innovation Stage",
-      description: "Competing in the Conrad Challenge while preparing for clinical deployment and regulatory approval.",
+      title: "Clinical Deployment",
+      description: "Preparing for clinical deployment and regulatory approval.",
       color: "purple",
       achievements: [
         "Fully integrated pre-operative and intra-operative system",
@@ -77,7 +77,7 @@ export default function Timeline() {
     },
     {
       phase: "Next Steps",
-      date: "2025 - Early 2026",
+      date: "2026 - Early 2027",
       icon: "Target",
       title: "Clinical Trials & Regulatory Approval",
       description: "Beginning clinical trials with hospital partners and pursuing FDA clearance for widespread deployment.",
@@ -91,7 +91,7 @@ export default function Timeline() {
     },
     {
       phase: "The Future",
-      date: "2026 and Beyond",
+      date: "2027 and Beyond",
       icon: "Rocket",
       title: "Scaling PRISM",
       description: "Expanding PRISM's capabilities and bringing real-time surgical guidance to hospitals worldwide.",
