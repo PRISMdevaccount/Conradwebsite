@@ -9,7 +9,7 @@ export default function Timeline() {
     {
       phase: "The Beginning",
       date: "May 2024",
-      icon: <Users className="w-8 h-8" />,
+      icon: "Users",
       title: "Meeting at ISEF",
       description: "Diya and Ahyoung met at the International Science and Engineering Fair in Columbus, Ohio. A conversation about pancreatic surgery sparked the idea for PRISM.",
       color: "purple",
@@ -22,7 +22,7 @@ export default function Timeline() {
     {
       phase: "Research & Development",
       date: "June - August 2024",
-      icon: <Lightbulb className="w-8 h-8" />,
+      icon: "Lightbulb",
       title: "Building PRISM",
       description: "Intensive development of both the pre-operative software and mixed-reality application. Training AI models and refining the technology.",
       color: "indigo",
@@ -36,7 +36,7 @@ export default function Timeline() {
     {
       phase: "Validation",
       date: "September - November 2024",
-      icon: <TestTube className="w-8 h-8" />,
+      icon: "TestTube",
       title: "Technical Testing",
       description: "Rigorous validation on thousands of CT scans and surgical images to ensure clinical-grade accuracy.",
       color: "purple",
@@ -50,7 +50,7 @@ export default function Timeline() {
     {
       phase: "Clinical Feedback",
       date: "October - December 2024",
-      icon: <Hospital className="w-8 h-8" />,
+      icon: "Hospital",
       title: "Surgeon Evaluations",
       description: "Presented PRISM to 50+ pancreatic surgeons and oncologists across leading medical institutions.",
       color: "indigo",
@@ -64,7 +64,7 @@ export default function Timeline() {
     {
       phase: "Where We Are Now",
       date: "January 2025",
-      icon: <Award className="w-8 h-8" />,
+      icon: "Award",
       title: "Conrad Challenge Innovation Stage",
       description: "Competing in the Conrad Challenge while preparing for clinical deployment and regulatory approval.",
       color: "purple",
@@ -78,7 +78,7 @@ export default function Timeline() {
     {
       phase: "Next Steps",
       date: "2025 - Early 2026",
-      icon: <Target className="w-8 h-8" />,
+      icon: "Target",
       title: "Clinical Trials & Regulatory Approval",
       description: "Beginning clinical trials with hospital partners and pursuing FDA clearance for widespread deployment.",
       color: "indigo",
@@ -92,7 +92,7 @@ export default function Timeline() {
     {
       phase: "The Future",
       date: "2026 and Beyond",
-      icon: <Rocket className="w-8 h-8" />,
+      icon: "Rocket",
       title: "Scaling PRISM",
       description: "Expanding PRISM's capabilities and bringing real-time surgical guidance to hospitals worldwide.",
       color: "purple",
@@ -106,7 +106,7 @@ export default function Timeline() {
     {
       phase: "Our Vision",
       date: "Long-term Impact",
-      icon: <Globe className="w-8 h-8" />,
+      icon: "Globe",
       title: "Transforming Surgical Care",
       description: "Making advanced surgical guidance accessible to hospitals everywhere, improving outcomes for patients worldwide.",
       color: "indigo",
@@ -118,6 +118,22 @@ export default function Timeline() {
       ]
     }
   ];
+
+  const iconComponents = {
+    Users,
+    Lightbulb,
+    TestTube,
+    Hospital,
+    Award,
+    Target,
+    Rocket,
+    Globe
+  };
+
+  const getIcon = (iconName) => {
+    const IconComponent = iconComponents[iconName];
+    return IconComponent ? <IconComponent className="w-8 h-8" /> : null;
+  };
 
   return (
     <>
@@ -172,7 +188,7 @@ export default function Timeline() {
                       ? 'from-purple-500 to-purple-600' 
                       : 'from-indigo-500 to-indigo-600'
                   } flex items-center justify-center text-white shadow-lg`}>
-                    {event.icon}
+                    {getIcon(event.icon)}
                   </div>
 
                   {/* Content Card */}
