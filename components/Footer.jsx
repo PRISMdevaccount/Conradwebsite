@@ -49,10 +49,10 @@ export default function Footer() {
               Questions or partnership inquiries?
             </p>
             <a 
-              href="mailto:diyaramakrishnan009@gmail.com" 
+              href="mailto:prism.pancreaticsurgery@gmail.com" 
               className="text-purple-600 hover:text-purple-700 font-medium transition-colors text-sm break-all"
             >
-              diyaramakrishnan009@gmail.com
+              prism.pancreaticsurgery@gmail.com
             </a>
           </div>
         </div>

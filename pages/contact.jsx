@@ -93,10 +93,10 @@ export default function Contact() {
                 Send us an email and we'll get back to you within 24-48 hours.
               </p>
               <a
-                href="mailto:diyaramakrishnan009@gmail.com"
+                href="mailto:prism.pancreaticsurgery@gmail.com"
                 className="inline-block px-8 py-4 bg-white text-purple-600 font-semibold rounded-full hover:bg-gray-50 transition-colors shadow-lg text-lg"
               >
-                diyaramakrishnan009@gmail.com
+                prism.pancreaticsurgery@gmail.com
               </a>
             </motion.div>
           </div>

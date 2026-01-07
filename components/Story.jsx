@@ -69,9 +69,9 @@ export default function Story() {
                 visualization, enabling surgeons to navigate complex anatomy with unprecedented precision.
               </p>
             </div>
-            <div className="relative h-96 md:h-auto bg-gradient-to-br from-purple-50 to-indigo-50">
+            <div className="relative h-96" md:h-auto bg-gradient-to-br from-purple-50 to-indigo-50">
               <Image
-                src="/PRISM_website.png"
+                src="/platform.png"
                 alt="PRISM Platform Interface"
                 fill
                 className="object-contain p-8"

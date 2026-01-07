@@ -134,7 +134,7 @@ export default function Support() {
                 Contact us to learn more about investment opportunities and our growth roadmap.
               </p>
               <a
-                href="mailto:diyaramakrishnan009@gmail.com?subject=Investment Inquiry - PRISM"
+                href="mailto:prism.pancreaticsurgery@gmail.com?subject=Investment Inquiry - PRISM"
                 className="inline-block px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-50 transition-colors shadow-lg"
               >
                 Contact Investment Team
@@ -199,7 +199,7 @@ export default function Support() {
                   Partner with us for clinical trials, validation studies, and early adoption programs.
                 </p>
                 <a
-                  href="mailto:diyaramakrishnan009@gmail.com?subject=Clinical Partnership Inquiry"
+                  href="mailto:prism.pancreaticsurgery@gmail.com?subject=Clinical Partnership Inquiry"
                   className="text-purple-600 font-semibold hover:text-purple-700"
                 >
                   Explore Partnership →
@@ -220,7 +220,7 @@ export default function Support() {
                   Collaborate on research studies, publications, and advancing surgical AI technology.
                 </p>
                 <a
-                  href="mailto:diyaramakrishnan009@gmail.com?subject=Research Collaboration Inquiry"
+                  href="mailto:prism.pancreaticsurgery@gmail.com?subject=Research Collaboration Inquiry"
                   className="text-indigo-600 font-semibold hover:text-indigo-700"
                 >
                   Start Collaboration →
@@ -241,7 +241,7 @@ export default function Support() {
                   Integrate PRISM into existing surgical platforms or explore co-development opportunities.
                 </p>
                 <a
-                  href="mailto:diyaramakrishnan009@gmail.com?subject=Technology Partnership Inquiry"
+                  href="mailto:prism.pancreaticsurgery@gmail.com?subject=Technology Partnership Inquiry"
                   className="text-purple-600 font-semibold hover:text-purple-700"
                 >
                   Discuss Integration →
