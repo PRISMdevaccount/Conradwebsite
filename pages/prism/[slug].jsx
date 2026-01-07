@@ -2,45 +2,48 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function Post({ frontmatter, content }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-green-50">
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-purple-400 to-green-400 text-white py-20 shadow-lg">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-extrabold drop-shadow-lg mb-4">
+      <header className="bg-gradient-to-br from-purple-600 to-indigo-600 text-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
             {frontmatter.title}
           </h1>
-          <p className="text-sm opacity-90">
-            {frontmatter.date} · {frontmatter.author}
+          <p className="text-purple-100 text-lg">
+            {frontmatter.date}
           </p>
         </div>
       </header>
 
       {/* Post Container */}
-      <main className="max-w-4xl mx-auto px-6 -mt-12 relative z-10">
-        <div className="bg-white rounded-2xl shadow-2xl p-8">
-          {/* Removed inline image rendering */}
-
+      <main className="max-w-4xl mx-auto px-6 py-16">
+        <div className="bg-white rounded-3xl shadow-lg p-12">
           {/* Markdown content */}
           <article
-            className="prose prose-lg prose-indigo max-w-none prose-headings:font-bold prose-h2:text-purple-600 prose-h3:text-green-600 prose-a:text-purple-600 prose-a:font-semibold hover:prose-a:text-purple-800"
+            className="prose prose-lg max-w-none prose-headings:font-bold prose-h2:text-gray-900 prose-h3:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-purple-600 prose-a:font-semibold hover:prose-a:text-purple-700"
             dangerouslySetInnerHTML={{ __html: marked(content) }}
           />
+        </div>
 
-          {/* Decorative Box */}
-          <div className="mt-12 p-6 rounded-xl bg-gradient-to-r from-green-100 to-purple-100 shadow-inner border-l-4 border-purple-400">
-            <h3 className="text-xl font-semibold text-purple-700 mb-2">
-              💡 Key Insight
-            </h3>
-            <p className="text-gray-700">
-              {frontmatter.takeaway ||
-                "This research reflects PRISM’s mission to push boundaries in surgical innovation."}
-            </p>
-          </div>
+        {/* Back Button */}
+        <div className="mt-12 text-center">
+          <a
+            href="/prism"
+            className="inline-block px-8 py-4 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transition-colors"
+          >
+            ← Back to Inside PRISM
+          </a>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
