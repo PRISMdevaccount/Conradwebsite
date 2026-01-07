@@ -12,17 +12,17 @@ export default function Team() {
       name: "Your Name",
       role: "Role/Title",
       bio: "Brief biography highlighting relevant experience, education, or passion for the project. Keep it 2-3 sentences.",
-      image: "/team/member1.jpg", // Add your actual images to public/team/
-      linkedin: "https://linkedin.com/in/yourprofile",
-      email: "member1@example.com"
+      image: "/public/Diya.png", // Add your actual images to public/team/
+      linkedin: "https://www.linkedin.com/in/diya-ramakrishnan/",
+      email: "diyaramakrishnan009@gmail.com"
     },
     {
       name: "Team Member 2",
       role: "Role/Title",
       bio: "Brief biography highlighting relevant experience, education, or passion for the project. Keep it 2-3 sentences.",
       image: "/team/member2.jpg",
-      linkedin: "https://linkedin.com/in/profile2",
-      email: "member2@example.com"
+      linkedin: "https://www.linkedin.com/in/ahyoung-song/",
+      email: "ahyoungsong08@gmail.com"
     },
     // Add more team members as needed
   ];
